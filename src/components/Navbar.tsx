@@ -22,6 +22,12 @@ export default function Navbar() {
             <Link href="/newsletter" className="text-gray-600 hover:text-gray-900">
               Newsletter
             </Link>
+            <Link href="/about" className="text-gray-600 hover:text-gray-900">
+              Om oss
+            </Link>
+            <Link href="/contact" className="text-gray-600 hover:text-gray-900">
+              Kontakt
+            </Link>
           </div>
 
           <div className="md:hidden">
