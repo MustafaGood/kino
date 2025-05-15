@@ -6,6 +6,7 @@ export interface IMovie extends Document {
   releaseDate: Date;
   genre: string[];
   rating: number;
+  imageUrl: string;
   createdAt: Date;
   updatedAt: Date;
 }
@@ -36,10 +37,15 @@ const MovieSchema: Schema = new Schema(
       max: 10,
       default: 0,
     },
+    imageUrl: {
+      type: String,
+      required: [true, 'Image URL is required'],
+      trim: true,
+    },
   },
   {
     timestamps: true,
   }
 );
 
-export default mongoose.models.Movie || mongoose.model<IMovie>('Movie', MovieSchema); 
+export default mongoose.models.Movie || mongoose.model<IMovie>('Movie', MovieSchema);

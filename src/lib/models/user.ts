@@ -3,6 +3,7 @@ import mongoose, { Schema, Document } from 'mongoose';
 export interface IUser extends Document {
   email: string;
   name: string;
+  subscribed: boolean;
   createdAt: Date;
   updatedAt: Date;
 }
@@ -21,10 +22,14 @@ const UserSchema: Schema = new Schema(
       required: [true, 'Name is required'],
       trim: true,
     },
+    subscribed: {
+      type: Boolean,
+      default: false,
+    },
   },
   {
     timestamps: true,
   }
 );
 
-export default mongoose.models.User || mongoose.model<IUser>('User', UserSchema); 
+export default mongoose.models.User || mongoose.model<IUser>('User', UserSchema);
