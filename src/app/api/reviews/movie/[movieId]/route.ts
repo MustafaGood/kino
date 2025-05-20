@@ -13,7 +13,7 @@ export async function GET(
     return NextResponse.json(reviews);
   } catch (error) {
     return NextResponse.json(
-      { error: 'Failed to fetch reviews for this movie' },
+      { error: 'Misslyckades med att hämta recensioner för denna film' },
       { status: 500 }
     );
   }

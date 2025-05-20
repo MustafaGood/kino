@@ -9,7 +9,7 @@ export async function GET() {
     return NextResponse.json(reviews);
   } catch (error) {
     return NextResponse.json(
-      { error: 'Failed to fetch reviews' },
+      { error: 'Misslyckades med att hämta recensioner' },
       { status: 500 }
     );
   }
@@ -24,8 +24,8 @@ export async function POST(request: Request) {
     return NextResponse.json(review, { status: 201 });
   } catch (error) {
     return NextResponse.json(
-      { error: 'Failed to create review' },
+      { error: 'Misslyckades med att skapa recension' },
       { status: 500 }
     );
   }
-} 
+}

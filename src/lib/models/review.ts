@@ -14,22 +14,22 @@ const ReviewSchema: Schema = new Schema(
     movieId: {
       type: Schema.Types.ObjectId,
       ref: 'Movie',
-      required: [true, 'Movie ID is required'],
+      required: [true, 'Movie ID is required'], // Film-ID krävs
     },
     userId: {
       type: Schema.Types.ObjectId,
       ref: 'User',
-      required: [true, 'User ID is required'],
+      required: [true, 'User ID is required'], // Användar-ID krävs
     },
     rating: {
       type: Number,
-      required: [true, 'Rating is required'],
+      required: [true, 'Rating is required'], // Betyg krävs
       min: 1,
       max: 5,
     },
     comment: {
       type: String,
-      required: [true, 'Comment is required'],
+      required: [true, 'Comment is required'], // Kommentar krävs
       trim: true,
     },
   },
@@ -38,4 +38,4 @@ const ReviewSchema: Schema = new Schema(
   }
 );
 
-export default mongoose.models.Review || mongoose.model<IReview>('Review', ReviewSchema); 
+export default mongoose.models.Review || mongoose.model<IReview>('Review', ReviewSchema);
