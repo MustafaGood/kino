@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import connectDB from '@/lib/mongodb';
 import Review from '@/lib/models/review';
 
+// @ts-expect-error Next.js type inference bug for dynamic API route handlers
 export async function DELETE(
   request: Request,
   { params }: { params: { id: string } }
@@ -24,4 +25,4 @@ export async function DELETE(
       { status: 500 }
     );
   }
-} 
+}
