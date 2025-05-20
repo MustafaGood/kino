@@ -3,6 +3,14 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="space-y-12">
+      {/* Lägg till specialeffekt Kino-section överst på sidan */}
+      <section className="flex items-center justify-center min-h-[60vh]">
+        <div className="content relative">
+          <h2 className="kino-outline">Kino</h2>
+          <h2 className="kino-animated">Kino</h2>
+        </div>
+      </section>
+
       <section className="py-24 text-center bg-gradient-to-br from-[var(--kino1)] via-[var(--kino2)] to-[var(--kino3)] rounded-3xl shadow-2xl mb-16 border-4 border-[var(--kino4)]">
         <h1 className="text-5xl md:text-7xl font-extrabold mb-6 text-white drop-shadow-lg">Välkommen till Kino</h1>
         <p className="text-2xl md:text-3xl text-white/90 mb-10 font-medium">Din plats för filmrecensioner och underhållningsnyheter</p>
