@@ -17,8 +17,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="sv">
+      <body className={inter.className} style={{ background: 'var(--kino1)', color: 'var(--foreground)' }}>
         <div className="min-h-screen flex flex-col">
           <Navbar />
           <main className="flex-grow container mx-auto px-4 py-8">
