@@ -2,32 +2,31 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white">
-      <div className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <footer className="bg-gradient-to-r from-gray-900 via-blue-900 to-black text-white mt-16 rounded-t-3xl shadow-2xl">
+      <div className="container mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
-            <h3 className="text-lg font-semibold mb-4">About Kino</h3>
-            <p className="text-gray-300">
-              Your ultimate destination for movie reviews and entertainment news.
-            </p>
+            <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+              <img src="/globe.svg" alt="Kino" className="h-6 w-6" /> Om Kino
+            </h3>
+            <p className="text-gray-300">Din ultimata destination för filmrecensioner och underhållningsnyheter.</p>
           </div>
-          
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-xl font-bold mb-4">Snabblänkar</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/movies" className="text-gray-300 hover:text-white">
-                  Movies
+                  Filmer
                 </Link>
               </li>
               <li>
                 <Link href="/reviews" className="text-gray-300 hover:text-white">
-                  Reviews
+                  Recensioner
                 </Link>
               </li>
               <li>
                 <Link href="/newsletter" className="text-gray-300 hover:text-white">
-                  Newsletter
+                  Nyhetsbrev
                 </Link>
               </li>
               <li>
@@ -42,7 +41,6 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <p className="text-gray-300">

@@ -7,8 +7,8 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Kino - Movie Reviews & News",
-  description: "A platform for movie reviews and entertainment news",
+  title: "Kino - Filmrecensioner & Nyheter",
+  description: "En plattform för filmrecensioner och underhållningsnyheter",
 };
 
 export default function RootLayout({
@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="sv">
       <body className={inter.className}>
         <div className="min-h-screen flex flex-col">
           <Navbar />

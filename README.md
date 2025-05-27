@@ -1,83 +1,83 @@
-# Kino - Movie Reviews & News Platform
+# Kino - Plattform för Filmrecensioner & Nyheter
 
-A modern web application built with Next.js and MongoDB for movie reviews and entertainment news.
+En modern webbapplikation byggd med Next.js och MongoDB för filmrecensioner och underhållningsnyheter.
 
-## Features
+## Funktioner
 
-- Movie reviews and ratings
-- Newsletter subscription system
-- Modern, responsive UI
-- RESTful API endpoints
-- MongoDB integration
+- Filmrecensioner och betyg
+- Nyhetsbrevsprenumeration
+- Modern, responsiv design
+- RESTful API-endpoints
+- MongoDB-integration
 
-## Tech Stack
+## Teknikstack
 
 - Next.js 14 (App Router)
 - TypeScript
-- MongoDB with Mongoose
+- MongoDB med Mongoose
 - Tailwind CSS
 - ESLint
 
-## Prerequisites
+## Förutsättningar
 
-- Node.js 18.x or later
-- MongoDB database
-- npm or yarn package manager
+- Node.js 18.x eller senare
+- MongoDB-databas
+- npm eller yarn som pakethanterare
 
-## Getting Started
+## Kom igång
 
-1. Clone the repository:
+1. Klona repot:
 ```bash
 git clone <repository-url>
 cd kino
 ```
 
-2. Install dependencies:
+2. Installera beroenden:
 ```bash
 npm install
 ```
 
-3. Create a `.env.local` file in the root directory and add your MongoDB connection string:
+3. Skapa en `.env.local`-fil i projektroten och lägg till din MongoDB-anslutningssträng:
 ```
-MONGODB_URI=your_mongodb_connection_string
+MONGODB_URI=din_mongodb_connection_string
 ```
 
-4. Run the development server:
+4. Starta utvecklingsservern:
 ```bash
 npm run dev
 ```
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+5. Öppna [http://localhost:3000](http://localhost:3000) i din webbläsare för att se applikationen.
 
-## API Routes
+## API-endpoints
 
-- `GET /api/reviews` - Get all reviews
-- `POST /api/reviews` - Create a new review
-- `DELETE /api/reviews/[id]` - Delete a review
-- `POST /api/newsletter/send` - Send newsletter
-- `POST /api/newsletter/subscribe` - Subscribe to newsletter
-- `GET /api/newsletter/preview` - Preview newsletter
+- `GET /api/reviews` - Hämta alla recensioner
+- `POST /api/reviews` - Skapa en ny recension
+- `DELETE /api/reviews/[id]` - Ta bort en recension
+- `POST /api/newsletter/send` - Skicka nyhetsbrev
+- `POST /api/newsletter/subscribe` - Prenumerera på nyhetsbrev
+- `GET /api/newsletter/preview` - Förhandsgranska nyhetsbrev
 
-## Project Structure
+## Projektstruktur
 
 ```
 src/
-├── app/                 # App router pages and API routes
-├── components/          # React components
-├── lib/                 # Utility functions and database models
-│   ├── models/         # MongoDB models
-│   └── mongodb.ts      # Database connection
-└── styles/             # Global styles
+├── app/                 # App router-sidor och API-endpoints
+├── components/          # React-komponenter
+├── lib/                 # Hjälpfunktioner och databasmodeller
+│   ├── models/         # MongoDB-modeller
+│   └── mongodb.ts      # Databasanslutning
+└── styles/             # Globala stilar
 ```
 
-## Contributing
+## Bidra
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+1. Forka repot
+2. Skapa en feature branch (`git checkout -b feature/ny-funktion`)
+3. Committa dina ändringar (`git commit -m 'Lägg till ny funktion'`)
+4. Pusha till din branch (`git push origin feature/ny-funktion`)
+5. Skapa en Pull Request
 
-## License
+## Licens
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+Detta projekt är licensierat under MIT-licensen – se LICENSE-filen för detaljer.
